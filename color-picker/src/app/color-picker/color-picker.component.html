@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="selected-color" [style.background] = "selectedColor" data-test-id="selectedColor"></div>
+    <div class="color-picker-options" data-test-id="colorPickerOptions">
+    <div *ngFor="let color of colorOptions" class="color-option" [style.background]="color" (click)="changeColor(color)"></div>
+    </div>
+    <p class="selected-color-name">Selected Color: {{ selectedColor }}</p>
+</div>
