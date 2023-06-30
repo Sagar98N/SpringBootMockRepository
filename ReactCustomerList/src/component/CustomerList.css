@@ -1,0 +1,49 @@
+.customer-list-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.customer-list-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    padding: 5px;
+}
+
+.input-container button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.customer-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.customer-list li {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
