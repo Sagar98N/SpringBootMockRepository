@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping
 public class TradeController {
 
     @Autowired
@@ -29,7 +29,7 @@ public class TradeController {
     @GetMapping("/trades")
     public ResponseEntity<List<Trade>> getAll(){
         List<Trade> list = tradeService.getAllTrades();
-        return  new ResponseEntity<>(list, HttpStatusCode.valueOf(201));
+        return  new ResponseEntity<>(list, HttpStatusCode.valueOf(200));
     }
 
 

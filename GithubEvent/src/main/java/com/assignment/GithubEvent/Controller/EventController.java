@@ -37,7 +37,7 @@ public class EventController {
     }
 
     @GetMapping("/events/{eventId}")
-    public ResponseEntity<Optional<Event>> getAllByEvent(@PathVariable int eventId){
+    public ResponseEntity<Optional<Event>> getByEventId(@PathVariable int eventId){
         Optional<Event> event = eventService.findByEventId(eventId);
         if(event.isPresent()){
             return  new ResponseEntity<>(event, HttpStatusCode.valueOf(200));
